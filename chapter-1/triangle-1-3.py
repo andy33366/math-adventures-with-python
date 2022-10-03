@@ -12,4 +12,12 @@ def sqcircle():
     for i in range(60):
         square()
         right(5)
-sqcircle()
+
+def triangle(sideLength=100):
+    for i in range(3):
+        forward(sideLength)
+        right(120)
+
+triangle(50)
+triangle()
+triangle(150)
