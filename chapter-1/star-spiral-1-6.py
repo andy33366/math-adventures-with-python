@@ -7,5 +7,14 @@ def star(length=100):
         forward(length)
         right(144)
 
-star()
+def spiral():
+    length = 5
+    for i in range(60):
+        star(length)
+        right(5)
+        length += 5
+
+spiral()
+
+    
 
