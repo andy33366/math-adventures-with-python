@@ -38,7 +38,13 @@ def gcf(num1, num2):
             if num1 == j:
                 return num1
         print(str(num1) + ' is not in list 2')
-            
 
-
-
+# optimized gcf function
+# pick the smaller number then loop from the bigger side to find the greatest
+# common factor quicker
+def gcf2(num1, num2):
+    if num1 > num2:
+        num1, num2 = num2, num1
+    for i in range(num1, 0, -1):
+        if (num1 % i == 0 and num2 % 2 == 0):
+            return i
